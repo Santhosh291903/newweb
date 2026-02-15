@@ -800,7 +800,7 @@ section {
 }
 
 .responsibilities li:before {
-    content: "â–¸";
+    content: "▸";
     color: var(--primary);
     position: absolute;
     left: 0;
