@@ -813,12 +813,12 @@ section {
 
 /* Contact Section */
 .contact-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
 }
-
-
 
 .contact-info {
     background: white;
@@ -828,9 +828,6 @@ section {
     opacity: 0;
     transform: translateX(-30px);
     transition: all 0.3s ease;
-    max-width: 420px;
-    width: 100%;
-    text-align: center;
 }
 
 .contact-info.visible {
@@ -844,8 +841,6 @@ section {
     gap: 20px;
     margin-bottom: 30px;
     transition: all 0.4s ease;
-    flex-direction: column;
-    text-align: center;
 }
 
 .contact-item:hover {
@@ -874,7 +869,6 @@ section {
     display: flex;
     gap: 15px;
     margin-top: 30px;
-    justify-content: center;
 }
 
 .social-link {
@@ -1356,5 +1350,3 @@ footer {
         padding: 25px;
     }
 }
-
-
