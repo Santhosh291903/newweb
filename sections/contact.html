@@ -2,52 +2,49 @@
 <section id="contact">
     <div class="container">
         <h2 class="section-title">Let's Connect</h2>
-        <p class="section-subtitle">
-            Ready to discuss your next DevOps project or explore how we can
-            transform your infrastructure challenges into scalable solutions?
-        </p>
-
+        <p class="section-subtitle">Ready to discuss your next DevOps project or explore how we can transform your infrastructure challenges into scalable solutions? I'm always open to new opportunities and collaborations.</p>
+        
         <div class="contact-container">
-            <!-- Contact Info -->
             <div class="contact-info">
                 <div class="contact-item">
-                    <h3>Phone</h3>
-                    <p>+91 80566 26787</p>
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+8056626787</p>
+                    </div>
                 </div>
-
+                
                 <div class="contact-item">
-                    <h3>Email</h3>
-                    <p>santhoshprabhakaran03@gmail.com</p>
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h3>Email</h3>
+                        <p>santhoshprabhakaran03@gmail.com</p>
+                    </div>
                 </div>
-
+                
                 <div class="contact-item">
-                    <h3>Location</h3>
-                    <p>Tirunelveli, Tamil Nadu, India</p>
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Tirunelveli, Tamil Nadu, India</p>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Contact Form -->
-            <div class="contact-form">
-                <form id="contactForm" onsubmit="sendEmail(event)">
-                    <div class="form-group">
-                        <label>Your Name</label>
-                        <input type="text" id="name" class="form-control" required>
+                
+                <div>
+                    <h3 style="margin-bottom: 15px; color: var(--primary);">Follow My Work</h3>
+                    <p style="color: var(--text-light);">Connect with me on professional networks to stay updated with my latest projects and insights.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/kishor-santhosh-p-a9b7861ab/" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Santhosh291903/" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/Santhosh_DevOps" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
                     </div>
-
-                    <div class="form-group">
-                        <label>Subject</label>
-                        <input type="text" id="subject" class="form-control" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Your Message</label>
-                        <textarea id="message" rows="5" class="form-control" required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn" style="width:100%;">
-                        Send Message
-                    </button>
-                </form>
+                </div>
             </div>
         </div>
     </div>
@@ -55,31 +52,18 @@
 
 <!-- Footer -->
 <footer>
-    <div class="container" style="text-align:center;">
-        <h3>KISHOR SANTHOSH</h3>
-        <p>DevOps Engineer | Cloud | Automation</p>
-        <p>© 2026 Kishor Santhosh</p>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">KISHOR SANTHOSH</div>
+            <p class="footer-desc">DevOps Engineer specializing in cloud infrastructure, automation, and scalable solutions. Passionate about building efficient systems that drive business growth and technological innovation.</p>
+            <div class="social-links" style="justify-content: center; margin-top: 30px;">
+                <a href="https://www.linkedin.com/in/kishor-santhosh-p-a9b7861ab/" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Santhosh291903/" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/Santhosh_DevOps" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Kishor Santhosh. All Rights Reserved. | Crafted with passion for DevOps excellence
+            </div>
+        </div>
     </div>
 </footer>
-
-<!-- Gmail compose script -->
-<script>
-function sendEmail(event) {
-    event.preventDefault();
-
-    const name = document.getElementById('name').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
-
-    const body =
-`Name: ${name}
-
-Message:
-${message}`;
-
-    const gmailLink =
-`https://mail.google.com/mail/?view=cm&fs=1&to=santhoshprabhakaran03@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-    window.open(gmailLink, "_blank");
-}
-</script>
