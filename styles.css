@@ -865,48 +865,6 @@ section {
     transform: rotate(15deg) scale(1.1);
 }
 
-.social-links {
-    display: flex;
-    gap: 15px;
-    margin-top: 30px;
-}
-
-.social-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    background: var(--light-gray);
-    color: var(--primary);
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: all 0.4s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.social-link::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: var(--gradient);
-    transition: all 0.4s ease;
-    z-index: -1;
-}
-
-.social-link:hover::before {
-    left: 0;
-}
-
-.social-link:hover {
-    color: white;
-    transform: translateY(-5px);
-}
 
 .contact-form {
     background: white;
@@ -1349,4 +1307,74 @@ footer {
     .testimonial-card {
         padding: 25px;
     }
+}
+
+
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 18px;
+  width: 420px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.contact-icon {
+  background: linear-gradient(135deg, #00a86b, #2ec4b6);
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.follow-section {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  background: #f4f6f8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  transition: 0.3s;
+}
+
+.social-link:hover {
+  background: #00a86b;
+  color: white;
 }
