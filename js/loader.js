@@ -10,7 +10,7 @@
         { id: 'section-skills', file: 'sections/skills.html' },
         { id: 'section-tools', file: 'sections/tools.html' },
         { id: 'section-experience', file: 'sections/experience.html' },
-        { id: 'section-articles', file: 'sections/certification.html' },
+        { id: 'section-certification', file: 'sections/certification.html' },
         { id: 'section-contact', file: 'sections/contact.html' }
     ];
 
