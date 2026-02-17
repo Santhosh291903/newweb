@@ -91,7 +91,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 20px;
+    padding: 100px 20px 0; /* FIX */
     position: relative;
     overflow: hidden;
     background: linear-gradient(135deg, #f0fdf4 0%, #f8fafc 100%);
@@ -1217,7 +1217,6 @@ footer {
     
     .name {
         font-size: 3.5rem;
-        margin-top: 80px;
     }
     
     .title {
@@ -1265,7 +1264,7 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        padding: 0 15px;
+        padding: 100px 15px 0;
     }
     
     section {
@@ -1274,7 +1273,6 @@ footer {
     
     .name {
         font-size: 3rem;
-        margin-top: 110px;
     }
     
     .title {
